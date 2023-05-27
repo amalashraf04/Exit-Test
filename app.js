@@ -79,8 +79,8 @@ app.post('/api/email',async(req,res)=>{
 //hosting
 
 const path = require('path');
-app.use(express.static('./dist/frontend/'))
-app.get('/*', function(req, res) { res.sendFile(path.join(__dirname + '/dist/frontend/index.html')); });
+app.use(express.static('./dist/Frontend/'))
+app.get('/*', function(req, res) { res.sendFile(path.join(__dirname + '/dist/Frontend/index.html')); });
 
 
 app.listen(2341,()=>{
