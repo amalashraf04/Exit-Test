@@ -76,7 +76,7 @@ app.post('/api/email',async(req,res)=>{
  })
 
 
-hosting
+//hosting
 
 const path = require('path');
 app.use(express.static('./dist/frontend/'))
