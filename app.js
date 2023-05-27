@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyparser = require('body-parser');
 const app =express();
 const nodemailer = require('nodemailer');
-const user=require('../backend/model/user')
+const user=require('./model/user')
 
 
 app.use(cors());
@@ -12,8 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 
 const mongoose = require('./db')
-// const api = require('./routes/api')
-// app.use('/api',api)
+
 
 
 app.post('/api/email',async(req,res)=>{
